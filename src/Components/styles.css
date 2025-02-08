@@ -1,0 +1,61 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  .stepper {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    align-items: center;
+  }
+  
+  .step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .step-number {
+    border: 2px solid black;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    z-index: 2;
+    background-color: #ccc;
+  }
+  
+  .step-name {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .complete > .step-number {
+    background-color: green;
+    color: white;
+  }
+  .active > .step-number {
+    background-color: blue;
+    color: white;
+  }
+  .line {
+    position: relative;
+    bottom: 115px;
+    width: 63%; /* Adjust width to fit steps */
+    height: 4px;
+    background-color: #ddd;
+    margin: 20px auto; /* Center the line */
+    border-radius: 2px;
+  }
+  
+  .progress-line {
+    height: 100%;
+    background-color: green;
+    transition: width 0.5s ease-in-out;
+    border-radius: 2px;
+  }
+  
