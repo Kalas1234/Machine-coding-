@@ -18,3 +18,10 @@ export const storeConfigs = [
   ];
 
   export const tenureData = [12,24,36,48,60]
+  export const DEFAULT_CHECKBOX_DATA = [
+    { title: "Include Uppercase Letters", state: false },
+    { title: "Include Lowercase Letters", state: false },
+    { title: "Include Numbers", state: false },
+    { title: "Include Symbols", state: false },
+  ];
+  

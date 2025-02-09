@@ -5,9 +5,10 @@ import '../app.css';
 import Pagination from './Components/Pagination';
 import Stepper from './Components/Stepper';
 import EmiCalc from './Components/EmiCalc';
+import PasswordGenerator from './Components/PasswordGenerator';
 const App = () => {
     return (
-        <div>
+        <div className='flex justify-center items-center h-[100vh] flex-col '>
             <h1>This is the Machine coding pratice</h1>
             <Outlet />
         </div>
@@ -30,6 +31,10 @@ const appRouter = createBrowserRouter([
             {
                 path:'/emi',
                 element: <EmiCalc />
+            },
+            {
+                path: '/password',
+                element : <PasswordGenerator />
             }
         ]
     }
